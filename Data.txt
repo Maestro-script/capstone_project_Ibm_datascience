@@ -1,0 +1,14 @@
+Data
+
+Based on definition of our problem, factors that will influence our decission are:
+
+number of existing gas stations around the location.
+number of and distance to gas stations in the neighborhood, if any.
+distance of neighborhood from central business district.
+We decided to use regularly spaced grid of locations, centered around city center, to define our neighborhoods.
+
+Following data sources will be needed to extract/generate the required information:
+
+centers of candidate areas will be generated algorithmically and approximate addresses of centers of those areas will be obtained using Google Maps API reverse geocoding
+number of gas stations and their type and location in every neighborhood will be obtained using Foursquare API
+coordinate of Jakarta center will be obtained using Google Maps API geocoding of well known Jakarta location (Monumen Nasional)
